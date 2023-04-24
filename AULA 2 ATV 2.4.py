@@ -1,4 +1,4 @@
-i = 1
-while i <= 10:
-    print(i)
-    i += 1
+n = int (input ("Insira o número:"))
+for i in range (1, 11):
+    tabuada = n*i
+    print (tabuada)
