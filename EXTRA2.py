@@ -1,24 +1,31 @@
-# algoritmo
-#     inteiro n, i, fatorial
-#     n <- 5
-#     fatorial <- 1
-#     para i de 1 ate n faca
-#         fatorial <- fatorial * i
-#     fim_para
-#     escreva("O fatorial de", n, "é:", fatorial)
-# fim_algoritmo
+# fibonacci
+# 1,1,2,3,5,8,...
+# x y
+# n= -2 entrada invalida
 
-#5! = 1*2*3*4*5 = 120
-# fatorial = 1  i = 1   fatorial = 1*1 = 1
-# fatorial = 1  i=2     fatorial = 1*2 = 2 
-# fatorial = 2  i=3     fatorial = 2*3 = 6
-# fatorial = 6  i=4     fatorial = 6*4 = 24
-# fatorial = 24 i=5    fatorial = 24*5 = 120      
+#Forma + fácil
+n = int(input("digite o elememto: ")) 
 
-n = 5
-fatorial = 1
+anterior = 1
+proximo = 1
+temp = 0
 
-for i in range(1,n+1):
-    fatorial = fatorial * i
+for i in range(n):
+    print(anterior)
+    temp=anterior
+    anterior=proximo
+    proximo=temp+anterior
 
-print("o fatorial de ", n, "é:", fatorial)
+#Forma elegante rsrs
+# n = int(input("digite a qtd"))
+# if n <= 0:
+#     print("entrada invalida")
+# else:
+#     x,y = 0,1
+#     print("a sequencia ate a entrada n, ", n, "é")
+#     print(x) 
+#     print(y)
+
+#     for _ in range(n-2):
+#         x,y = y, x+y
+#         print(y)
