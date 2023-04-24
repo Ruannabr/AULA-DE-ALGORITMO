@@ -1,6 +1,8 @@
-n1 = int(input("Digite um número: "))
+n = int (input ("Insira o número: "))
+soma = 0
+for i in range (n):
+    elemento = float (input ("Insira os números:"))
+    soma = soma+elemento
+    media = soma/n
 
-potencia = 2
-
-for n1 in range(2, n1):
-    print(n1 ** potencia)
+print (f"A mé dia dos elementos é: {media}")
