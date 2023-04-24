@@ -1,2 +1,2 @@
-num = int(input("Entre com algum número: "))
-print("Antecessor: ", num-1,"Seu número: ",num, "Sucessor: ", num+1)
+for _ in range (1,11):
+    print (_)
